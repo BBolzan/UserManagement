@@ -2,7 +2,7 @@
 
 class HomeModel {
     public function getUsers() {
-        $apiUrl = "https://dummyjson.com/users";
+        $apiUrl = "https://dummyjson.com/users?limit=50";
         try {
             $response = @file_get_contents($apiUrl);
             if ($response === FALSE) {
